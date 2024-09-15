@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --dark-blue-main-BG: hsl(217, 54%, 11%);
+    --dark-blue-card-BG: hsl(216, 50%, 16%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-size: 18px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+.nft-preview-component{
+    width: 100%;
+    height: 100vh;
+    background: var(--dark-blue-main-BG);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nft-preview-card{
+    width: 300px;
+    height: 500px;
+    background: var(--dark-blue-card-BG);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.nft-preview-image{
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: .8rem;
+}
+
+.nft-preview-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.nft-preview-details{
+    width: 100%;
+    height: fit-content;
+    margin-top: 1rem;
+}
+
+.nft-preview-details h1{
+    font-size: var(--font-size);
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.nft-preview-details p{
+    font-size: var(--font-size);
+    color: var(--soft-blue);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nft-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.nft-etherium{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .8rem;
+}
+
+.nft-etherium h2{
+    font-size: 1rem;
+    color: var(--cyan);
+}
+
+.nft-time-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.nft-time-left p{
+    margin: 0;
+}
+
+hr{
+    color: var(--dark-blue-line);
+}
+
+.nft-user-avatar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.nft-user-avatar b{
+    color: var(--white);
+}
+
+.nft-user-avatar p{
+    margin: 0;
+    font-size: 1rem;
+}
+
+.attribution{
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--dark-blue-card-BG);
+}
